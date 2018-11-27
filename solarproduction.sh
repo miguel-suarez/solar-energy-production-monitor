@@ -2,8 +2,8 @@
 set -e
 SITE_ID=$1
 KEY_ID=$2
-SKIP_FETCH=$3
-START_YEAR="2017"
+START_YEAR=$3
+SKIP_FETCH=$4
 CURRENT_YEAR=$(date +%Y)
 PREVIOUS_MONTH_INDEX=$(($(date -v15d -v-1m +%m)-1))  # -2 one to go to previous month and one to match it with the entry on the array (first index = 0)
 years=$(($CURRENT_YEAR - $START_YEAR + 1))
